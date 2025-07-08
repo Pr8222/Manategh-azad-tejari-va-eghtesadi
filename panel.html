@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سامانه صدور کارت شناسایی</title>
+    <link rel="stylesheet" href="CSS/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="CSS/panel.css">
+</head>
+
+<body>
+    <div class="container w-100 mw-100">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-2 vh-100 bg-primary right-column">
+                <ul>
+                    <li class="list-unstyled text-white mt-5 mb-3 user-select-auto"><i
+                            class="bi bi-circle me-1"></i>اطلاعات شخصی</li>
+                    <li class="list-unstyled text-white my-4 user-select-auto"><i class="bi bi-circle me-1"></i> اطلاعات
+                        سکونت</li>
+                    <li class="list-unstyled text-white my-4 user-select-auto"><i class="bi bi-circle me-1"></i> صدور
+                        کارت</li>
+                </ul>
+            </div>
+            <div class="col-lg-10 col-md-10 col-10 vh-100 left-column">
+                <h1 class="fs-3 my-5 ms-5">اطلاعات شخصی</h1>
+                <div class="container ms-5 p-0">
+                    <div class="row">
+                        <div class="col-4">
+                            <p class="text-body-secondary">نام و نام‌خانوادگی: <span class="text-black"
+                                    style="margin-right: 4rem;"> علی احمدی</span></p>
+                        </div>
+                        <div class="col-4">
+                            <p class="text-body-secondary">نام پدر: <span class="text-black"
+                                    style="margin-right: 4rem;">محمد</span></p>
+                        </div>
+                        <div class="col-4">
+                            <p class="text-body-secondary">کدملی: <span class="text-black"
+                                    style="margin-right: 4rem;">0012345678</span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <p class="text-body-secondary">تلفن همراه: <span class="text-black"
+                                    style="margin-right: 6.7rem;">09121234567</span></p>
+                        </div>
+                        <div class="col-4">
+                            <p class="text-body-secondary">تاریخ تولد: <span class="text-black"
+                                    style="margin-right: 2.7rem;">1362/05/23</span></p>
+                        </div>
+                    </div>
+                    <div class="row w-100 mt-4 justify-content-start">
+                        <div
+                            class="col-2 shadow-lg me-4 bg-body rounded d-flex flex-column justify-content-center align-items-center input-col">
+                            <div class="p-3 d-flex flex-column justify-content-center align-items-center text-center"
+                                id="profile">
+                                <input id="profile-img" type="file" accept="image/jpg, image/jpeg" hidden="">
+                                <label for="profile-img" class="fs-5 cursor-pointer">
+                                    <div class="d-flex flex-column">
+                                        <i class="bi bi-cloud-arrow-up" style="font-size: 4.5rem;"></i>بارگزاری عکس
+                                    </div>
+                                </label>
+                                <p class="text-body-secondary" style="font-size: 14px;">عکس را با فرمت jpg و حجم 2
+                                    مگابایت بارگزاری نمائید
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="col-2 shadow-lg me-4 bg-body rounded d-flex flex-column justify-content-center align-items-center input-col">
+                            <div class="p-3 d-flex flex-column justify-content-center align-items-center text-center"
+                                id="id-card-front">
+                                <input id="id-card-front-img" type="file" accept="image/jpg, image/jpeg" hidden="">
+                                <label for="id-card-front-img" class="fs-5 cursor-pointer">
+                                    <div class="d-flex flex-column">
+                                        <i class="bi bi-cloud-arrow-up" style="font-size: 4.5rem;"></i>بارگزاری عکس کارت
+                                        ملی
+                                    </div>
+                                </label>
+                                <p class="text-body-secondary" style="font-size: 14px;">عکس را با فرمت jpg و حجم 2
+                                    مگابایت بارگزاری نمائید
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="col-2 shadow-lg me-4 bg-body rounded d-flex flex-column justify-content-center align-items-center input-col">
+                            <div class="p-3 d-flex flex-column justify-content-center align-items-center text-center"
+                                id="id-card-back">
+                                <input id="id-card-back-img" type="file" accept="image/jpg, image/jpeg" hidden="">
+                                <label for="id-card-back-img" class="fs-5 cursor-pointer">
+                                    <div class="d-flex flex-column">
+                                        <i class="bi bi-cloud-arrow-up" style="font-size: 4.5rem;"></i>بارگزاری عکس پشت کارت
+                                        ملی
+                                    </div></label>
+                                <p class="text-body-secondary" style="font-size: 14px;">عکس را با فرمت jpg و حجم 2
+                                    مگابایت بارگزاری نمائید
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row-reverse">
+                        <button id="register"
+                            class="px-5 py-2 rounded border-0 bg-black text-white register">ثبت</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/jquery-3.7.1.js"></script>
+    <script src="JS/panel.js"></script>
+</body>
+
+</html>

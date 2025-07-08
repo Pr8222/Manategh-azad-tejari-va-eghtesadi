@@ -1,0 +1,63 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+.right-column {
+    background: linear-gradient(80deg,
+            #1976d2 50%,
+            #2196f3 50%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.stages {
+    position: relative;
+    left: -310px;
+    bottom: -125px;
+    display: flex;
+    flex-direction: row;
+}
+
+.stage {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background-color: #fff;
+    z-index: 2;
+    margin: 0 5px 0 0;
+}
+
+.stage.active {
+    opacity: 30%;
+}
+
+.btn {
+    border-radius: unset;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
