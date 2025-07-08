@@ -50,7 +50,7 @@ $(document).ready(function () {
 
     var selectedOption = $(this).val();
     if (selectedOption == "FreeZone") {
-      $(`<div class="form mb-3 me-5" id="select-free-zone-display">
+      $(`<div class="form mb-3 me-5 position-relative" id="select-free-zone-display">
                     <i class="bi bi-layers position-absolute top-50 translate-middle-y me-3 text-secondary"
                         style="right: 0.75rem; font-size: 18px;"></i>
                     <select class="form-select form-select-lg mb-3 ps-5 text-body-secondary fs-6" id="select-free-zone">
