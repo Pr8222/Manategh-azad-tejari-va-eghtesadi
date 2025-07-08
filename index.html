@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,31 +26,36 @@
             <div class="col-lg-6 col-md-12 col-12 vh-100 p-5 left-column">
                 <h1 class=" fs-3">شورایعالی مناطق آزاد تجاری-صنعتی و ویژه اقتصادی</h1>
                 <p class="text-body-secondary mb-4">اطلاعات هویتی خود را تکمیل نمائید.</p>
-                <div class="form my-3 me-5" id="citizenshipDisplay">
-                    <select class="form-select form-select-lg mb-3 text-body-secondary fs-6" id="citizenship">
-                        <option selected>تابعیت</option>
+                <div class="form my-3 me-5 position-relative" id="citizenshipDisplay">
+                    <i class="bi bi-layers position-absolute top-50 translate-middle-y me-3 text-secondary"
+                        style="right: 0.75rem; font-size: 18px;"></i>
+                    <select class="form-select form-select-lg mb-3 ps-5 text-body-secondary fs-6" id="citizenship">
+                        <option selected> تابعیت</option>
                         <option value="Iranian">ایرانی</option>
                         <option value="Foreigner">اتباع</option>
                     </select>
                 </div>
 
-                <div class="form mb-3 me-5" id="freeZoneDisplay">
-                    <select class="form-select form-select-lg mb-3 text-body-secondary fs-6" id="freeZone">
-                        <option selected>نوع منطقه آزاد</option>
-                        <option value="FreeZone">منطقه آزاد تجاری-صنعتی</option>
-                        <option value="SpecialZone">منطقه ویژه اقتصادی</option>
+                <div class="form mb-3 me-5 position-relative" id="freeZoneDisplay">
+                    <i class="bi bi-layers position-absolute top-50 translate-middle-y me-3 text-secondary"
+                        style="right: 0.75rem; font-size: 18px;"></i>
+                    <select class="form-select form-select-lg mb-3 ps-5 text-body-secondary fs-6" id="freeZone">
+                        <option selected><i class="bi bi-layers"></i>نوع منطقه آزاد</option>
+                        <option value="FreeZone"><i class="bi bi-layers"></i>منطقه آزاد تجاری-صنعتی</option>
+                        <option value="SpecialZone"><i class="bi bi-layers"></i>منطقه ویژه اقتصادی</option>
                     </select>
                 </div>
 
                 <div class="mb-3 me-5">
-                    <input type="number" class="form-control text-start" id="userId" placeholder="کدملی/شناسه های اطباع">
+                    <input type="number" class="form-control text-start" id="userId"
+                        placeholder="کدملی/شناسه های اطباع">
                 </div>
 
                 <div class="mb-3 me-5">
                     <input type="number" class="form-control text-start" id="phone-number" placeholder="تلفن همراه">
                 </div>
 
-                <div class="d-flex flex-row-reverse mt-5" style="position: relative; bottom: -222px;">
+                <div class="d-flex flex-row-reverse mt-5" style="position: fixed; left: 50px; bottom: 25px;">
                     <button type="button" class="btn btn-dark btn-md px-5 py-2" id="next-page">مرحله بعد</button>
                 </div>
             </div>
@@ -59,4 +65,5 @@
     <script src="JS/jquery-3.7.1.js"></script>
     <script src="js/Input.js"></script>
 </body>
+
 </html>
